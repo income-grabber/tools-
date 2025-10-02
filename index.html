@@ -110,9 +110,39 @@
             width: 100%;
         }
         
-        .auth-buttons {
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .hero-buttons {
             display: flex;
             gap: 1rem;
+            justify-content: center;
+            margin-bottom: 1rem;
         }
         
         .btn {
@@ -149,49 +179,14 @@
             transform: translateY(-2px);
         }
         
-        .mobile-menu {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        
-        /* Hero Section */
-        .hero {
-            padding: 5rem 0;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            line-height: 1.2;
-        }
-        
-        .hero p {
-            font-size: 1.3rem;
-            color: var(--secondary);
-            max-width: 700px;
-            margin: 0 auto 2.5rem;
-        }
-        
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin-bottom: 3rem;
-        }
-        
         /* Tools Section */
         .tools-section {
-            padding: 5rem 0;
+            padding: 4rem 0;
         }
         
         .section-header {
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
         }
         
         .section-header h2 {
@@ -259,7 +254,7 @@
         
         /* Features Section */
         .features-section {
-            padding: 5rem 0;
+            padding: 4rem 0;
             background: white;
         }
         
@@ -301,14 +296,15 @@
         footer {
             background-color: var(--dark);
             color: white;
-            padding: 4rem 0 2rem;
+            padding: 3rem 0 1.5rem;
+            margin-top: 3rem;
         }
         
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
+            gap: 2rem;
+            margin-bottom: 2rem;
         }
         
         .footer-column h3 {
@@ -341,11 +337,11 @@
             color: #aaa;
             text-decoration: none;
             transition: var(--transition);
+            opacity: 0.8;
         }
         
         .footer-column ul li a:hover {
-            color: white;
-            padding-left: 5px;
+            opacity: 1;
         }
         
         .social-links {
@@ -374,7 +370,7 @@
         
         .copyright {
             text-align: center;
-            padding-top: 2rem;
+            padding-top: 1.5rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: #aaa;
             font-size: 0.9rem;
@@ -400,10 +396,6 @@
                 display: block;
             }
             
-            .auth-buttons {
-                display: none;
-            }
-            
             .hero h1 {
                 font-size: 2.3rem;
             }
@@ -424,7 +416,7 @@
         
         @media (max-width: 576px) {
             .hero {
-                padding: 3rem 0;
+                padding: 3rem 0 1.5rem;
             }
             
             .tools-section, .features-section {
@@ -464,15 +456,8 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#tools">Tools</a></li>
                         <li><a href="#features">Features</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-                
-                <div class="auth-buttons">
-                    <a href="#" class="btn btn-outline">Log In</a>
-                    <a href="#" class="btn btn-primary">Sign Up</a>
-                </div>
                 
                 <div class="mobile-menu">
                     <i class="fas fa-bars"></i>
@@ -510,7 +495,7 @@
                     </div>
                     <h3>Image Compressor</h3>
                     <p>Reduce image file size without losing quality. Support for JPG, PNG, and WebP formats.</p>
-                    <a href="/tools/img-compressor.html" class="btn btn-primary">Use Tool</a>
+                    <a href="" class="btn btn-primary">Use Tool</a>
                 </div>
                 
                 <div class="tool-card">
@@ -693,7 +678,7 @@
                     <h3>Company</h3>
                     <ul>
                         <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
                         <li><a href="#">Blog</a></li>
